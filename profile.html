@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>自己紹介</title>
+
+<style>
+
+body{
+margin:0;
+padding:0;
+background:linear-gradient(135deg,#ffd1dc,#ffc0cb);
+font-family:'Arial','Hiragino Sans',sans-serif;
+overflow:hidden;
+}
+
+/* 背景 */
+
+.background{
+position:fixed;
+left:0;
+top:0;
+width:100%;
+height:100%;
+object-fit:cover;
+opacity:0.15;
+z-index:1;
+}
+
+/* 中央 */
+
+.container{
+position:relative;
+z-index:10;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+height:100vh;
+text-align:center;
+color:white;
+}
+
+/* タイトル */
+
+h1{
+font-size:5rem;
+margin-bottom:30px;
+text-shadow:0 4px 10px rgba(0,0,0,0.2);
+
+animation:titleFloat 3s ease-in-out infinite;
+}
+
+/* 説明 */
+
+.profile{
+font-size:2rem;
+line-height:2;
+background:rgba(255,255,255,0.2);
+padding:40px;
+border-radius:30px;
+backdrop-filter:blur(5px);
+}
+
+/* ボタン */
+
+.home-button{
+margin-top:50px;
+display:inline-block;
+padding:18px 40px;
+background:white;
+border-radius:20px;
+text-decoration:none;
+font-size:28px;
+font-weight:bold;
+color:#ff4f8b;
+transition:0.3s;
+box-shadow:0 4px 15px rgba(0,0,0,0.2);
+}
+
+.home-button:hover{
+transform:scale(1.08);
+}
+
+/* 小さい女の子 */
+
+.small-character{
+position:fixed;
+right:40px;
+bottom:20px;
+width:140px;
+z-index:5;
+
+animation:floatGirl 3s ease-in-out infinite;
+}
+
+/* キラキラ */
+
+.sparkle{
+position:absolute;
+font-size:40px;
+animation:bounce 2s infinite;
+}
+
+.sparkle1{
+left:15%;
+top:20%;
+}
+
+.sparkle2{
+right:15%;
+top:25%;
+animation-delay:0.5s;
+}
+
+/* アニメーション */
+
+@keyframes floatGirl{
+0%,100%{
+transform:translateY(0px);
+}
+50%{
+transform:translateY(-20px);
+}
+}
+
+@keyframes bounce{
+0%,100%{
+transform:translateY(0px);
+}
+50%{
+transform:translateY(-15px);
+}
+}
+
+@keyframes titleFloat{
+0%,100%{
+transform:translateY(0px);
+}
+50%{
+transform:translateY(-10px);
+}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- 背景 -->
+<img src="big.png" class="background">
+
+<!-- キラキラ -->
+<div class="sparkle sparkle1">✨</div>
+<div class="sparkle sparkle2">🌸</div>
+
+<!-- 小さい女の子 -->
+<img src="small.png" class="small-character">
+
+<!-- 中央 -->
+<div class="container">
+
+<h1>
+自己紹介
+</h1>
+
+<div class="profile">
+
+こんにちは！✨<br>
+  まかろんです🐣<br>
+Cluster🐧VRChatでも🌷<br>
+よろしくお願いします🎀
+
+</div>
+
+<a href="index.html" class="home-button">
+ホームへ戻る
+</a>
+
+</div>
+
+</body>
+</html>
